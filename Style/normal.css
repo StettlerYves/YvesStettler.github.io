@@ -1,0 +1,21 @@
+.skills {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.skill_card {
+    display: flex;
+    flex-grow: 1;
+}
+
+.skill_card h3 {
+    display: none;
+}
+
+.skill_card img {
+
+    width: 10%;
+}
