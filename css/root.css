@@ -1,0 +1,50 @@
+:root {
+    font-family: 'Open Sans';
+    scroll-behavior: smooth;
+
+    --text-primary: #b6b6b6;
+    --text-secondary: #676787;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+
+    --divider1-color: #676787;
+
+    --header-bg: #001220;
+    --header-text: #b6b6b6;
+
+    --sect1-text-primary: var(--header-text);
+    --sect1-bg-primary: var(--header-bg);
+    --sect2-text-primary: #23232e;
+    --sect2-bg-primary: #676787;
+    --sect3-bg-primary: #8B6A98;
+    --sect4-bg-primary: #C62368;
+
+    --footer-bg: var(--header-bg);
+    --footer-text: var(--header-text);
+
+    --navbar-thickness: 5rem;
+    --transition-speed: 200ms;
+
+    --logos-size: 10rem;
+    --details-logo-margin-top: 2rem;
+}
+
+@media screen and (max-width: 1079px) {
+    :root {
+        font-size: .8rem;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    display: none;
+}
+
+body {
+    color: black;
+    background-color: white;
+}

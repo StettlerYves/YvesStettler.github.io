@@ -1,0 +1,76 @@
+@import url(root.css);
+
+.navbar {
+    width: var(--navbar-thickness);
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width var(--transition-speed) ease;
+    z-index: 1;
+}
+
+.navbar:hover {
+    width: 16rem;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-item:last-child {
+    margin-top: auto;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: var(--navbar-thickness);
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(.7);
+    transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+    filter: grayscale(0) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+.nav-link svg {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+
+    color: var(--text-primary);
+    filter: grayscale(100%) opacity(.7);
+    transition: filter var(--transition-speed);
+
+    transition: width var(--transition-speed) ease-in-out;
+}
+
+.nav-link:hover svg {
+    width: 3rem;
+    height: 3rem;
+
+    filter: grayscale(0) opacity(1);
+    color: var(--text-secondary);
+}
+
+.link-text {
+    display: none;
+}
+
+.navbar:hover .link-text {
+    display: block;
+}
